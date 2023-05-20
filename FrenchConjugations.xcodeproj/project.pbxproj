@@ -15,6 +15,7 @@
 		2C0759292A18BD63000EC0DC /* FrenchConjugations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0759272A18BCF7000EC0DC /* FrenchConjugations.swift */; };
 		2C07592A2A18BD6E000EC0DC /* ConjugationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0759282A18BCF7000EC0DC /* ConjugationView.swift */; };
 		2C07592B2A18BD70000EC0DC /* VerbsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0759262A18BCF7000EC0DC /* VerbsList.swift */; };
+		2C07592F2A1906CA000EC0DC /* FastSearchArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C07592E2A1906CA000EC0DC /* FastSearchArray.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2C0759262A18BCF7000EC0DC /* VerbsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerbsList.swift; sourceTree = "<group>"; };
 		2C0759272A18BCF7000EC0DC /* FrenchConjugations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrenchConjugations.swift; sourceTree = "<group>"; };
 		2C0759282A18BCF7000EC0DC /* ConjugationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConjugationView.swift; sourceTree = "<group>"; };
+		2C07592E2A1906CA000EC0DC /* FastSearchArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FastSearchArray.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			children = (
 				2C07591F2A18BCBA000EC0DC /* french-verb-conjugation.csv */,
 				2C07591E2A18BC9E000EC0DC /* Model.swift */,
+				2C07592E2A1906CA000EC0DC /* FastSearchArray.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				2C0759202A18BCBD000EC0DC /* Model.swift in Sources */,
 				2C0759292A18BD63000EC0DC /* FrenchConjugations.swift in Sources */,
 				2C07592A2A18BD6E000EC0DC /* ConjugationView.swift in Sources */,
+				2C07592F2A1906CA000EC0DC /* FastSearchArray.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +305,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"FrenchConjugations/Preview Content\"";
 				DEVELOPMENT_TEAM = 57C78B97UA;
 				ENABLE_PREVIEWS = YES;
@@ -336,7 +340,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"FrenchConjugations/Preview Content\"";
 				DEVELOPMENT_TEAM = 57C78B97UA;
 				ENABLE_PREVIEWS = YES;

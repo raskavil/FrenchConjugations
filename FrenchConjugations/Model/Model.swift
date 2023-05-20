@@ -8,7 +8,8 @@ class ViewModel: ObservableObject {
         didSet {
             currentTask?.cancel()
             currentTask = Task {
-                let value = await self.savedConjugations.filter { $0.infinitive.starts(with: self.searchTerm) }
+                let term = self.searchTerm.isEmpty ? "a" : self.searchTerm
+                let value = await self.conjugationStorage.filter(with: term)
                 do {
                     try Task.checkCancellation()
                 } catch {
@@ -21,6 +22,8 @@ class ViewModel: ObservableObject {
             }
         }
     }
+
+    private var conjugationStorage: FastTermSearchStorage<Conjugation> = .init(array: [], stringKeypath: \.infinitive)
     @Saved("conjugations") private var savedConjugations: [Conjugation] = []
     
     private var currentTask: Task<(), Never>?
@@ -39,6 +42,7 @@ class ViewModel: ObservableObject {
 
             self.savedConjugations = decodedConjugations.uniqueValues { $0.infinitive == $1.infinitive }
         }
+        conjugationStorage = .init(array: savedConjugations, stringKeypath: \.infinitive)
         displayedConjugations = savedConjugations
     }
     
